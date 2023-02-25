@@ -1,0 +1,92 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	letter-spacing: 2px;
+	font-family: 'Poppins', sans-serif;
+	color: #B8E4F0;
+}
+
+::-webkit-scrollbar {
+	background: #041C32;
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #1E3163;
+	border-radius: 10px;
+}
+
+body {
+  min-height: 100vh;
+  background: url(Background.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+	position : absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 30px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .name {
+	font-weight: 700px;
+	text-decoration : none;
+	font-size : 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+header ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header ul li{
+	list-style: none;
+	margin-left: 20px;
+}
+
+header ul li a{
+	text-decoration : none;
+	padding: 6px 15px;
+	color: #fff;
+	border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active
+{
+	background: #fff;
+	color: #041C32;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 5px;
+  float: right;
+  overflow: hidden;
+}
+
+li {
+  display: inline-block;
+  padding: 5px 30px;
+}
+
+li a {
+  display: block;
+  color: #dee2e6;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+

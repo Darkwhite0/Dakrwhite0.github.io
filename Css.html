@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ICTips HTML</title>
+	<link rel="shortcut icon" type="text/css" href="Bulb_on.png">
+	<link rel="stylesheet" type="text/css" href="Homepage_Style.css">
+	<style type="text/css">
+
+		.topic {
+			max-width: 1300px;
+			height: 700px;
+			display: flex;
+			justify-content: center;
+			align-items: center; 
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 30px;
+		}
+
+		.docu {
+			padding: 80px;
+			line-height: 1.4em;
+			font-size: 20px;
+			background: black;
+			margin-left: 250px;
+			margin-right: 250px;
+			margin-bottom: 100px;
+			letter-spacing: 2px;
+			line-height: 40px;
+			opacity: 0.9;
+	    }
+
+	    .docu img{
+	    	margin-left: 28px; 
+	    }
+
+	    h1{
+	    	color: #DD4A48;
+	    	margin-bottom: 30px;
+	    }
+
+	    h2{
+	    	color: #B3541E;
+	    	margin-bottom: 15px;
+	    }
+
+	    p{
+	    	margin-left: 20px;
+	    }
+
+	    #back-to-top-btn {
+		  display: none;
+		  position: fixed;
+		  bottom: 20px;
+		  right: 20px;
+		  font-size: 26px;
+		  width: 80px;
+		  height: 80px;
+		  background-color: #fff;
+		  color: #333;
+		  cursor: pointer;
+		  outline: none;
+		  border: 3px solid #333;
+		  border-radius: 50%;
+		  transition-duration: 0.2s;
+		  transition-timing-function: ease-in-out;
+		  transition-property: background-color, color;
+		}
+
+		#back-to-top-btn:hover, #back-to-top-btn:focus {
+		  background-color: #333;
+		  color: #fff;  
+		}
+
+		@media(max-width: 992px) {
+		  .container { padding: 20px 100px; }
+		  #back-to-top-btn { font-size: 22px; width: 40px; height: 40px; bottom: 15px; right: 15px; }
+		}
+		@media(max-width:768px) {
+		  body { font-size: 16px; }
+		  .container { padding: 10px 50px; }
+		  h1 { font-size: 26px; }
+		  h2 { font-size: 22px; }
+		  hr { margin: 30px 0; }
+		  #back-to-top-btn { font-size: 18px; width: 32px; height: 32px; bottom: 6px; right: 6px; }
+		}
+
+		/* Animations */
+		.btnEntrance {
+		  animation-duration: 0.5s;
+		  animation-fill-mode: both;
+		  animation-name: btnEntrance;
+		}
+
+		/* fadeInUp */
+		@keyframes btnEntrance {
+		  from {
+		    opacity: 0;
+		    transform: translate3d(0, 100%, 0);
+		  }
+		  to {
+		    opacity: 1;
+		    transform: translate3d(0, 0, 0);
+		  }
+		}
+
+		.btnExit {
+		  animation-duration: 0.25s;
+		  animation-fill-mode: both;  
+		  animation-name: btnExit;
+		}
+
+		/* fadeOutDown */
+		@keyframes btnExit {
+		  from {
+		    opacity: 1;
+		  }
+		  to {
+		    opacity: 0;
+		    transform: translate3d(0, 100%, 0);
+		  }
+		}
+
+	</style>
+</head>
+<body>
+	<button id="back-to-top-btn">↑</button>
+
+	<header>
+		<a href="Lessons.html" class="name"> ICTips </a>
+		<ul>
+		    <li><a href="Homepage.html">Home</a></li>
+		    <li><a href="LESSONS.html" class="active">Lessons</a></li>
+		    <li><a href="Activities.html">Activities</a></li>
+		    <li><a href="About.html">About</a></li>    
+		</ul>
+	</header>
+
+	<div class="topic">
+		<img src="css3.png">
+		<h1>CSS</h1>
+	</div>
+
+	<div class="docu">
+		<h1>ABOUT CSS</h1>
+		<h2>What is CSS?</h2>
+		<p>Cascading Style Sheets (CSS) employ the words 'cascading' and style that defines how HTML code will look on a website depending on the data they wish to present. Without CSS, online sites are bland and uninteresting.</p><br>
+
+		<p>CSS is honored to <i>Norwegian Hakon Wium Lie</i>, who set out in 1994 to develop a universally compatible style sheet for the World Wide Web.</p><br>
+
+		<p>Lie's first test site using CSS was the Arena web browser. Lie went on to work collaboratively with Tim Berners-Lee and Robert Cailliau on CSS1, CSS2, and RFC 2318 versions. CSS became an established online standard in all of its requirements throughout its first decade of existence (1994–2004), greatly influencing the look and accessibility of the world wide web as we know it today. 
+		</p><br><br>
+
+		<h2>Why is it important to learn CSS?</h2>
+		<p>It’s easy to take a free Web template and build a website. But these templates rarely inspire by their elegance, so your website will look like every other site on the internet. By learning CSS you can modify these templates so that they display your colors and styles. Thus, you’ll have a customized website without a lot of effort.</p><br>
+
+		<p>CSS supports sites that look very different from page to page, without a lot of extensive coding. For example, many sites now perform slight color variations on the different sections of the site. Using page IDs, you can change the CSS for each section and use the same HTML structure for each section. The only thing that changes is the content and the CSS.</p><br>
+
+		<p>Many older websites that were built without CSS prove difficult to redesign. But once a site is built with CSS hooks, it can be redesigned very quickly. Changing things like the colors and backgrounds refresh how a site looks with very little effort. In fact, many sites now put up special versions of their sites for special occasions and they can do this because it only takes a few hours to create an alternate stylesheet for the occasion.</p><br><br>
+
+		<h2>Uses of CSS</h2>
+		<p>
+			•	Compatibility<br><br>
+			•	E-Commerce Domain<br><br>
+			•	Website Maintenance<br><br>
+			•	Social Media Impact<br><br>
+			•	Web-based Online Community and UI Approach<br><br>
+			•	Easy Accessibility<br><br>
+			•	Image File Handling<br><br>
+			•	Handling Dynamic Website Templates<br><br>
+			•	Handling Flash Animation and Effects<br><br>
+			•	End-User and Server-side Representation<br><br>
+		</p><br><br>
+
+		<h2>History of CSS</h2>
+		<p>•	CSS (1996) allows the user to select font style and size and change the colour of the text and background.</p><br> 
+
+		<p>•	CSS2 (1998) has capabilities that allows the user to design page layout.</p><br>
+
+		<p>•	CSS3 (1999) allows the user to create presentations from documents and to select from a wider range of fonts including those from Google and Typecast. Uniquely, CSS3 allows the user to incorporate rounded borders and use multiple columns. CSS3 is considered to be easier to use (when compared to CSS2) because it has different modules 
+		</p><br><br>
+	</div>
+
+	<div class="docu">
+		<center><h1> No Lessons Available.</h1></center>
+	</div>
+
+	<script type="text/javascript">
+		const backToTopButton = document.querySelector("#back-to-top-btn");
+
+		window.addEventListener("scroll", scrollFunction);
+
+		function scrollFunction() {
+		  if (window.pageYOffset > 300) { // Show backToTopButton
+		    if(!backToTopButton.classList.contains("btnEntrance")) {
+		      backToTopButton.classList.remove("btnExit");
+		      backToTopButton.classList.add("btnEntrance");
+		      backToTopButton.style.display = "block";
+		    }
+		  }
+		  else { // Hide backToTopButton
+		    if(backToTopButton.classList.contains("btnEntrance")) {
+		      backToTopButton.classList.remove("btnEntrance");
+		      backToTopButton.classList.add("btnExit");
+		      setTimeout(function() {
+		        backToTopButton.style.display = "none";
+		      }, 250);
+		    }
+		  }
+		}
+
+		backToTopButton.addEventListener("click", smoothScrollBackToTop);
+
+		// function backToTop() {
+		//   window.scrollTo(0, 0);
+		// }
+
+		function smoothScrollBackToTop() {
+		  const targetPosition = 0;
+		  const startPosition = window.pageYOffset;
+		  const distance = targetPosition - startPosition;
+		  const duration = 750;
+		  let start = null;
+		  
+		  window.requestAnimationFrame(step);
+
+		  function step(timestamp) {
+		    if (!start) start = timestamp;
+		    const progress = timestamp - start;
+		    window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+		    if (progress < duration) window.requestAnimationFrame(step);
+		  }
+		}
+
+		function easeInOutCubic(t, b, c, d) {
+			t /= d/2;
+			if (t < 1) return c/2*t*t*t + b;
+			t -= 2;
+			return c/2*(t*t*t + 2) + b;
+		};
+	</script>
+</body>
+</html>

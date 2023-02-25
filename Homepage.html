@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ICTips Homepage</title>
+	<link rel="shortcut icon" type="text/css" href="Bulb_on.png">
+	<link rel="stylesheet" type="text/css" href="Homepage_Style.css">
+	<style type="text/css">
+			
+		.mySlides {
+			display:none;
+			width: 100%;	
+		}
+
+		.slideshow-container {
+		  max-width: 1300px;
+		  height: 1000px;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center; 
+		  margin-left: auto;
+		  margin-right: auto;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="Homepage.html" class="name"> ICTips</a>
+		<ul>
+		    <li><a href="#" class="active">Home</a></li>
+		    <li><a href="Lessons.html">Lessons</a></li>
+		    <li><a href="Activities.html">Activities</a></li>
+		    <li><a href="About.html">About</a></li>  
+		</ul>
+	</header>
+
+	<div class="slideshow-container">
+  		<img class="mySlides" src="Qoute.png">
+  		<img class="mySlides" src="Qoute1.png">
+  		<img class="mySlides" src="Qoute2.png">
+  		<img class="mySlides" src="Qoute3.png">
+  		<img class="mySlides" src="Qoute4.png">
+	</div>
+
+	<script type="text/javascript">
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < x.length; i++) {
+		    x[i].style.display = "none";  
+		  }
+
+		  myIndex++;
+		  if (myIndex > x.length) {myIndex = 1}    
+		  x[myIndex-1].style.display = "block";  
+		  setTimeout(carousel, 10000);
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ICTips HTML</title>
+	<link rel="shortcut icon" type="text/css" href="Bulb_on.png">
+	<link rel="stylesheet" type="text/css" href="Homepage_Style.css">
+	<style type="text/css">
+
+		.topic {
+			max-width: 1300px;
+			height: 700px;
+			display: flex;
+			justify-content: center;
+			align-items: center; 
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 30px;
+		}
+
+		.docu {
+			padding: 80px;
+			line-height: 1.4em;
+			font-size: 20px;
+			background: black;
+			margin-left: 250px;
+			margin-right: 250px;
+			margin-bottom: 100px;
+			letter-spacing: 2px;
+			line-height: 40px;
+			opacity: 0.9;
+	    }
+
+	    .docu img{
+	    	margin-left: 28px; 
+	    }
+
+	    h1{
+	    	color: #DD4A48;
+	    	margin-bottom: 30px;
+	    }
+
+	    h2{
+	    	color: #B3541E;
+	    	margin-bottom: 15px;
+	    }
+
+	    p{
+	    	margin-left: 20px;
+	    }
+
+	    #back-to-top-btn {
+		  display: none;
+		  position: fixed;
+		  bottom: 20px;
+		  right: 20px;
+		  font-size: 26px;
+		  width: 80px;
+		  height: 80px;
+		  background-color: #fff;
+		  color: #333;
+		  cursor: pointer;
+		  outline: none;
+		  border: 3px solid #333;
+		  border-radius: 50%;
+		  transition-duration: 0.2s;
+		  transition-timing-function: ease-in-out;
+		  transition-property: background-color, color;
+		}
+
+		#back-to-top-btn:hover, #back-to-top-btn:focus {
+		  background-color: #333;
+		  color: #fff;  
+		}
+
+		@media(max-width: 992px) {
+		  .container { padding: 20px 100px; }
+		  #back-to-top-btn { font-size: 22px; width: 40px; height: 40px; bottom: 15px; right: 15px; }
+		}
+		@media(max-width:768px) {
+		  body { font-size: 16px; }
+		  .container { padding: 10px 50px; }
+		  h1 { font-size: 26px; }
+		  h2 { font-size: 22px; }
+		  hr { margin: 30px 0; }
+		  #back-to-top-btn { font-size: 18px; width: 32px; height: 32px; bottom: 6px; right: 6px; }
+		}
+
+		/* Animations */
+		.btnEntrance {
+		  animation-duration: 0.5s;
+		  animation-fill-mode: both;
+		  animation-name: btnEntrance;
+		}
+
+		/* fadeInUp */
+		@keyframes btnEntrance {
+		  from {
+		    opacity: 0;
+		    transform: translate3d(0, 100%, 0);
+		  }
+		  to {
+		    opacity: 1;
+		    transform: translate3d(0, 0, 0);
+		  }
+		}
+
+		.btnExit {
+		  animation-duration: 0.25s;
+		  animation-fill-mode: both;  
+		  animation-name: btnExit;
+		}
+
+		/* fadeOutDown */
+		@keyframes btnExit {
+		  from {
+		    opacity: 1;
+		  }
+		  to {
+		    opacity: 0;
+		    transform: translate3d(0, 100%, 0);
+		  }
+		}
+
+	</style>
+</head>
+<body>
+	<button id="back-to-top-btn">↑</button>
+
+	<header>
+		<a href="Lessons.html" class="name"> ICTips </a>
+		<ul>
+		    <li><a href="Homepage.html">Home</a></li>
+		    <li><a href="LESSONS.html" class="active">Lessons</a></li>
+		    <li><a href="Activities.html">Activities</a></li>
+		    <li><a href="About.html">About</a></li>    
+		</ul>
+	</header>
+
+	<div class="topic">
+		<img src="html.png">
+		<h1>HTML</h1>
+	</div>
+
+	<div class="docu">
+		<h1>ABOUT HTML</h1>
+		<h2>What is HTML?</h2>
+		<p>(Hypertext Markup Language) is the coding that organizes a web page's structure and content. Content could be organized using paragraphs, a list of bulleted points, or graphics and data tables, for example. This tutorial will teach you a fundamental understanding of HTML and its purposes, as the title suggests.</p>
+		<br>
+		<p>Web application was a collection of static HTML Web pages. Today's Web-based apps combine several new technologies to create dynamic, interactive applications over the Internet. However, HTML coding remains at the heart of the great majority of Web apps, and it has progressed from a simple language with a limited number of tags to a complex mark-up system. Allows authors to construct all-singing, all-dancing Web pages complete with animated pictures, sound, and all sorts of gimmicks. </p><br><br>
+
+		<h2>Why is it important to learn HTML?</h2>
+		<p>If you're a software developer or you intend to become one? While it's not strictly necessary to learn HTML, I can hardly imagine how you'd manage to never learn it in your entire career. I mean, let's say you've got a job writing drivers. Low-level C, day in, day out. Then one day I ask you if you'd update some documentation related to your project, which is written in... you guessed it... HTML. You'll go look at the documentation, spend a few minutes searching the web for stuff like "make a table in html", write some code, and be done with it. So, you'll pick up bits and pieces over time, or perhaps at some point you'll work on a front-end project. Eventually, you'll have "learned" HTML.</p><br><br>
+
+		<h2>Uses of Html</h2>
+		<p>
+			•	Web pages development<br><br>
+			•	Web document Creation<br><br>
+			•	Internet navigation<br><br>
+			•	Cutting edge feature<br><br>
+			•	Responsive images on web pages<br><br>
+			•	Client-side storage<br><br>
+			•	Offline capabilities usage<br><br>
+			•	Data Entry support with HTML<br><br>
+			•	Game development usage<br><br>
+			•	Native APIs usage to enrich a website<br><br>
+		</p><br><br>
+
+		<h2>History of HTML</h2>
+		<p>
+			•	<b>1991</b>- <i>Tim Berners-Lee</i> invents HTML 1.0<br><br>
+			•	<b>1993</b>- HTML 1.0 is released. Not many developers are creating websites at this time.<br><br>
+			•	<b>1995</b>- HTML 2.0 is published. This contains the features of HTML 1.0 plus new features. This remained the standard markup language for designing and creating websites until 1997.<br><br>
+			•	<b>1997</b>- HTML 3.0 was invented. Here, Dave Raggett introduced a fresh draft on HTML, which improved new features of HTML and gave more powerful characteristics for webmasters in designing websites. Unfortunately, the powerful features slowed down the browser in applying further improvements.<br><br>
+			•	<b>1999</b>- The widely-used HTML 4.0 comes out. It is very successful.<br><br>
+			•	<b>2014</b>- HTML 5.0 is released and used worldwide. It is said to be the extended version of HTML 4.01 which was published in 2012.<br>
+		</p><br><br>
+	</div>
+
+	<div class="docu">
+		<h1>BASIC THINGS TO KNOW IN HTML</h1>
+		<h2>Headings</h2>
+		<p>Headings may be one of the easiest codes to learn and considering how crucial they are to your SEO, it's a good thing. There are six different types, as seen below. To create a heading, simply wrap your text in the heading tags of your choice:</p><br>
+		<img width="900px" height="auto" src="Heading_html.jpg"><br><br><br>
+
+		<h2>Paragraphs</h2>
+		<p>What would a nice heading be without a paragraph to elaborate on the message? To get a paragraph like the one you’re reading now, simply wrap your text in <i>"<𝚙>"</i> tags like the example below</p><br>
+		<img width="900px" height="auto" src="Paragraphs_html.jpg"><br><br><br>
+		
+		<h2>Links</h2>
+		<p>Inbound marketing is nothing without linking your already-great content to other relevant articles and website pieces. Try linking a word or phrase in your paragraph by using the following <𝚊> code:</p><br>
+		<img width="900px" height="auto" src="links_html.jpg"><br><br><br>
+
+		<h2>Images</h2>
+		<p>This is a fun one. Images make everything better, and they make your content lot more appealing to the reader. Insert an image like this:</p><br>
+		<img width="900px" height="auto" src="Images_html.jpg"><br>
+		<p>The image tag is empty because it only contains attributes, so it doesn’t need to be closed. The attributes listed above include “src” or image URL. I also included the image alt text (important for SEO purposes), and some styling properties (width and height).</p><br><br><br>
+
+		<h2>Line Break</h2>
+		<p>A line break is also an empty element, so it doesn’t need to be closed.  A line break is basically an intentional space between two lines of text, created with <𝚋𝚛></p><br>
+		<img width="900px" height="auto" src="Br_html.jpg"><br>
+		<p>The image tag is empty because it only contains attributes, so it doesn’t need to be closed. The attributes listed above include “src” or image URL. I also included the image alt text (important for SEO purposes), and some styling properties (width and height).</p><br><br><br>
+
+		<h2>Horizontal Line</h2>
+		<p>Want to break up sections of a page or article? Try a horizontal line! Just use the empty element (no need to close it), <𝚑𝚛></p><br>
+		<img width="900px" height="auto" src="Hr_html.jpg"><br><br><br>
+
+		<h2>Comment Tag</h2>
+		<p>If you have a lot of code, this is extremely beneficial. You can use comments to describe your code, which can aid you later while editing the source code</p><br>
+		<img width="900px" height="auto" src="Comment_html.jpg"><br>
+		<p>And remember that the start tag has always an exclamation mark (!) but the end tag does not.</p><br><br><br>
+
+		<h2>Setting a specific font</h2>
+		<p>The next few are going to get a bit trickier, so try to stay with me. Now that you know how to create a heading, a paragraph, and stylized text, it’ll be useful for you to know that you can easily change the font using the element  “font-family.”</p><br>
+
+		<p>Don’t forget all of the small details, such as the equal sign, quotation marks, and semi-colon. Check out the examples below.</p><br>
+		<img width="900px" height="auto" src="Fonts_html.jpg"><br><br><br>
+
+		<h2>2.	BACKGROUND COLOR</h2>
+		<p>To change your background color please be guided on the format below</p><br>
+		<img width="900px" height="auto" src="FontColor_html.jpg"><br><br><br>
+
+		<h2>TEXT COLOR</h2>
+		<p>To change your TEXT COLOR please be guided on the format below</p><br>
+		<img width="900px" height="auto" src="Color_html.jpg"><br><br><br>
+
+		<h2></h2>
+		<p></p><br>
+		<img width="900px" height="auto" src=""><br><br><br>
+	</div>
+	<script type="text/javascript">
+		const backToTopButton = document.querySelector("#back-to-top-btn");
+
+		window.addEventListener("scroll", scrollFunction);
+
+		function scrollFunction() {
+		  if (window.pageYOffset > 300) { // Show backToTopButton
+		    if(!backToTopButton.classList.contains("btnEntrance")) {
+		      backToTopButton.classList.remove("btnExit");
+		      backToTopButton.classList.add("btnEntrance");
+		      backToTopButton.style.display = "block";
+		    }
+		  }
+		  else { // Hide backToTopButton
+		    if(backToTopButton.classList.contains("btnEntrance")) {
+		      backToTopButton.classList.remove("btnEntrance");
+		      backToTopButton.classList.add("btnExit");
+		      setTimeout(function() {
+		        backToTopButton.style.display = "none";
+		      }, 250);
+		    }
+		  }
+		}
+
+		backToTopButton.addEventListener("click", smoothScrollBackToTop);
+
+		// function backToTop() {
+		//   window.scrollTo(0, 0);
+		// }
+
+		function smoothScrollBackToTop() {
+		  const targetPosition = 0;
+		  const startPosition = window.pageYOffset;
+		  const distance = targetPosition - startPosition;
+		  const duration = 750;
+		  let start = null;
+		  
+		  window.requestAnimationFrame(step);
+
+		  function step(timestamp) {
+		    if (!start) start = timestamp;
+		    const progress = timestamp - start;
+		    window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+		    if (progress < duration) window.requestAnimationFrame(step);
+		  }
+		}
+
+		function easeInOutCubic(t, b, c, d) {
+			t /= d/2;
+			if (t < 1) return c/2*t*t*t + b;
+			t -= 2;
+			return c/2*(t*t*t + 2) + b;
+		};
+	</script>
+</body>
+</html>

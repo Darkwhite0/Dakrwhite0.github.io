@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ICTips HTML</title>
+	<link rel="shortcut icon" type="text/css" href="Bulb_on.png">
+	<link rel="stylesheet" type="text/css" href="Homepage_Style.css">
+	<style type="text/css">
+
+		.topic {
+			max-width: 1300px;
+			height: 700px;
+			display: flex;
+			justify-content: center;
+			align-items: center; 
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 30px;
+		}
+
+		.docu {
+			padding: 80px;
+			line-height: 1.4em;
+			font-size: 20px;
+			background: black;
+			margin-left: 250px;
+			margin-right: 250px;
+			margin-bottom: 100px;
+			letter-spacing: 2px;
+			line-height: 40px;
+			opacity: 0.9;
+	    }
+
+	    .docu img{
+	    	margin-left: 28px; 
+	    }
+
+	    h1{
+	    	color: #DD4A48;
+	    	margin-bottom: 30px;
+	    }
+
+	    h2{
+	    	color: #B3541E;
+	    	margin-bottom: 15px;
+	    }
+
+	    p{
+	    	margin-left: 20px;
+	    }
+
+	    #back-to-top-btn {
+		  display: none;
+		  position: fixed;
+		  bottom: 20px;
+		  right: 20px;
+		  font-size: 26px;
+		  width: 80px;
+		  height: 80px;
+		  background-color: #fff;
+		  color: #333;
+		  cursor: pointer;
+		  outline: none;
+		  border: 3px solid #333;
+		  border-radius: 50%;
+		  transition-duration: 0.2s;
+		  transition-timing-function: ease-in-out;
+		  transition-property: background-color, color;
+		}
+
+		#back-to-top-btn:hover, #back-to-top-btn:focus {
+		  background-color: #333;
+		  color: #fff;  
+		}
+
+		@media(max-width: 992px) {
+		  .container { padding: 20px 100px; }
+		  #back-to-top-btn { font-size: 22px; width: 40px; height: 40px; bottom: 15px; right: 15px; }
+		}
+		@media(max-width:768px) {
+		  body { font-size: 16px; }
+		  .container { padding: 10px 50px; }
+		  h1 { font-size: 26px; }
+		  h2 { font-size: 22px; }
+		  hr { margin: 30px 0; }
+		  #back-to-top-btn { font-size: 18px; width: 32px; height: 32px; bottom: 6px; right: 6px; }
+		}
+
+		/* Animations */
+		.btnEntrance {
+		  animation-duration: 0.5s;
+		  animation-fill-mode: both;
+		  animation-name: btnEntrance;
+		}
+
+		/* fadeInUp */
+		@keyframes btnEntrance {
+		  from {
+		    opacity: 0;
+		    transform: translate3d(0, 100%, 0);
+		  }
+		  to {
+		    opacity: 1;
+		    transform: translate3d(0, 0, 0);
+		  }
+		}
+
+		.btnExit {
+		  animation-duration: 0.25s;
+		  animation-fill-mode: both;  
+		  animation-name: btnExit;
+		}
+
+		/* fadeOutDown */
+		@keyframes btnExit {
+		  from {
+		    opacity: 1;
+		  }
+		  to {
+		    opacity: 0;
+		    transform: translate3d(0, 100%, 0);
+		  }
+		}
+
+	</style>
+</head>
+<body>
+	<button id="back-to-top-btn">↑</button>
+
+	<header>
+		<a href="Lessons.html" class="name"> ICTips </a>
+		<ul>
+		    <li><a href="Homepage.html">Home</a></li>
+		    <li><a href="LESSONS.html" class="active">Lessons</a></li>
+		    <li><a href="Activities.html">Activities</a></li>
+		    <li><a href="About.html">About</a></li>    
+		</ul>
+	</header>
+
+	<div class="topic">
+		<img src="javascript.png">
+		<h1>JavaScript</h1>
+	</div>
+
+	<div class="docu">
+		<h1>ABOUT JavaScript</h1>
+		<h2>What is JavaSript</h2>
+		<p>JavaScript is a scripting language and one of the three main languages used to create websites. Whereas HTML and CSS provide structure and design to a website, JavaScript allows you to add functionality and behaviors to your website, allowing users to interact with the material in a variety of creative ways.</p><br>
+
+		<p>JavaScript is one of the powerful and flexible programming languages. It is one of the core technologies of World Wide Web. It is popular among developers as JS. The programming language is essential for developing web applications.</p><br><br>
+
+		<h2>Why is it important to learn JavaScript?</h2>
+		<p>JavaScript facilitates responsive design. As developers add more interaction and complexity to their programs, JavaScript has become an essential part of the Internet experience. It is necessary for search engines, ecommerce, content management systems, responsive design, social media, and mobile apps to exist.</p><br><br>
+
+		<h2>Uses of Html</h2>
+		<p>
+			•	Web Development<br><br>
+			•	Web Applications<br><br>
+			•	Presentations<br><br>
+			•	Server Applications<br><br>
+			•	Web Servers<br><br>
+			•	Games<br><br>
+			•	Art<br><br>
+			•	Data Entry support with HTML<br><br>
+			•	Smartwatch Applications<br><br>
+			•	Mobile Applications<br><br>
+		</p><br><br>
+
+		<h2>History of JavaScript</h2>
+		<p>
+			•	<b>1995</b>- JavaScript was invented by <i>Brendan Eich</i> at Netscape and has since been updated to conform to ECMA-262 Edition 5 and later versions.<br><br>
+			•	<b>1997</b>- <i>Eich</i> built JavaScript for Netscape Navigator, and it immediately became known as LiveScript. Another oddity in JavaScript history is that the team changed the name to JavaScript to match Netscape's support for Java in its browser.<br>
+		</p><br><br>
+	</div>
+
+	<div class="docu">
+		<center><h1> No Lessons Available.</h1></center>
+	</div>
+	<script type="text/javascript">
+		const backToTopButton = document.querySelector("#back-to-top-btn");
+
+		window.addEventListener("scroll", scrollFunction);
+
+		function scrollFunction() {
+		  if (window.pageYOffset > 300) { // Show backToTopButton
+		    if(!backToTopButton.classList.contains("btnEntrance")) {
+		      backToTopButton.classList.remove("btnExit");
+		      backToTopButton.classList.add("btnEntrance");
+		      backToTopButton.style.display = "block";
+		    }
+		  }
+		  else { // Hide backToTopButton
+		    if(backToTopButton.classList.contains("btnEntrance")) {
+		      backToTopButton.classList.remove("btnEntrance");
+		      backToTopButton.classList.add("btnExit");
+		      setTimeout(function() {
+		        backToTopButton.style.display = "none";
+		      }, 250);
+		    }
+		  }
+		}
+
+		backToTopButton.addEventListener("click", smoothScrollBackToTop);
+
+		// function backToTop() {
+		//   window.scrollTo(0, 0);
+		// }
+
+		function smoothScrollBackToTop() {
+		  const targetPosition = 0;
+		  const startPosition = window.pageYOffset;
+		  const distance = targetPosition - startPosition;
+		  const duration = 750;
+		  let start = null;
+		  
+		  window.requestAnimationFrame(step);
+
+		  function step(timestamp) {
+		    if (!start) start = timestamp;
+		    const progress = timestamp - start;
+		    window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+		    if (progress < duration) window.requestAnimationFrame(step);
+		  }
+		}
+
+		function easeInOutCubic(t, b, c, d) {
+			t /= d/2;
+			if (t < 1) return c/2*t*t*t + b;
+			t -= 2;
+			return c/2*(t*t*t + 2) + b;
+		};
+	</script>
+</body>
+</html>
